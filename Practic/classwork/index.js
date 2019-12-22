@@ -1,0 +1,328 @@
+"use strict"
+
+
+// const pers = {
+//     name: "Govnoeat",
+//     age: 45,
+//     male: "male",
+//     appartaments: true,
+//     phone: "231241",
+//     greatings(){
+//         console.log(`hello my name ${this.name}, and im ${this.age}`);
+//     }
+// }
+// pers.greatings();
+
+// pers.friends = ["adolf", "iosif"];
+// delete pers.friends
+
+// for(let key in pers){
+//     console.log("Key", key);
+//     console.log("Value", pers[key]);
+// }
+
+
+// const keysArr = Object.keys(pers);
+// console.log(keysArr);
+
+// const valuesArr = Object.values(pers);
+// console.log(valuesArr);
+
+// const pareArr = Object.entries(pers);
+// console.log(pareArr);
+
+// const numbers = [1,2,3,45,65,4,46];
+// const max = Math.max(...numbers);
+// console.log(max);
+
+// const arr = ["Tor", "Tio", "Top", "roed"];
+// const newArr = [...arr, ...numbers];
+// console.log(newArr === arr);
+
+
+
+
+// const hotel = {
+//     name: 'Resort Hotel',
+//     stars: 5,
+//     capacity: 100,
+// };
+
+// const {name, ...rest } = hotel;
+// console.log(name);
+// console.log(rest);
+
+// const rgb = [200, 255, 100];
+// const [red, blue, green] = rgb;
+// console.log(blue);
+
+
+// const user = {
+//     name: "Mango",
+//     age: 20,
+//     hobby: 'html',
+//     premium: true
+// };
+// user.mood = "Happy";
+// user.hobby = "Skydiving";
+// user.premium = false;
+// console.log(user);
+// const arr = Object.keys(user);
+// for(let el of key){
+//     console.log(`${el}:${user[el]}`);
+// }
+
+
+
+// const countProps = function(obj){
+//     const arr = Object.keys(obj)
+//     return arr.length;
+// };
+
+
+
+
+
+// const findBestEmployee = function(employees) {
+//     // твой код
+//     let max = 0;
+//     let str = "";
+//     for(let key in employees){
+//         if(employees[key] > max){
+//             max = employees[key];
+//             str = key;
+//         } 
+//     }
+//     return str;
+//   };
+  
+//   console.log(
+//     findBestEmployee({
+//       ann: 29,
+//       david: 35,
+//       helen: 1,
+//       lorence: 99,
+//     }),
+//   ); // lorence
+  
+//   console.log(
+//     findBestEmployee({
+//       poly: 12,
+//       mango: 17,
+//       ajax: 4,
+//     }),
+//   ); // mango
+  
+//   console.log(
+//     findBestEmployee({
+//       lux: 147,
+//       david: 21,
+//       kiwi: 19,
+//       chelsy: 38,
+//     }),
+//   ); // lux
+
+
+
+
+
+
+
+//   const countTotalSalary = function(employees) {
+//     // твой код
+//     let sum = 0;
+//     const arr = Object.values(employees);
+//     for(let el of arr){
+//         sum+=el;
+
+//     }
+//     return sum
+//   };
+  
+  
+//   const countTotalSalary = function(employees) {
+//     // твой код
+//     let sum = 0;
+//     for(let key in employees){
+//         sum+=employees[key];
+//     }
+//     return sum
+//   };
+  
+//   /*
+//    * Вызовы функции для проверки работоспособности твоей реализации.
+//    */
+//   console.log(countTotalSalary({})); // 0
+
+//   console.log(
+//     countTotalSalary({
+//       mango: 100,
+//       poly: 150,
+//       alfred: 80,
+//     }),
+//   ); // 330
+  
+//   console.log(
+//     countTotalSalary({
+//       kiwi: 200,
+//       lux: 50,
+//       chelsy: 150,
+//     }),
+//   ); // 400
+
+
+
+
+
+// const products = [
+//     { name: 'Радар', price: 1300, quantity: 4 },
+//     { name: 'Сканер', price: 2700, quantity: 3 },
+//     { name: 'Дроид', price: 400, quantity: 7 },
+//     { name: 'Захват', price: 1200, quantity: 2 },
+//   ];
+  
+//   const getAllPropValues = function(arr, prop) {
+//     // твой код
+//     const newArr = [];
+//     for (let el of arr){
+//         if(el[prop]){
+//         newArr.push(el[prop])
+//         }
+//     }
+//     return newArr;
+//   };
+  
+//   /*
+//    * Вызовы функции для проверки работоспособности твоей реализации.
+//    */
+//   console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
+  
+//   console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+  
+//   console.log(getAllPropValues(products, 'category')); // []
+
+
+
+
+
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 2 },
+// ];
+
+// const calculateTotalPrice = function(allProdcuts, productName) {
+//   // твой код
+//   let sum = 0;
+//   for(let el of allProdcuts)
+//   if(el.name === productName){
+//       sum = el.price * el.quantity;
+//   }
+//   return sum;
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(calculateTotalPrice(products, 'Радар')); // 5200
+
+// console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+
+
+
+/*
+ * Типов транзацкий всего два.
+ * Можно положить либо снять деньги со счета.
+ */
+const Transaction = {
+    DEPOSIT: 'deposit',
+    WITHDRAW: 'withdraw',
+  };
+  
+  /*
+   * Каждая транзакция это объект со свойствами: id, type и amount
+   */
+  
+  const account = {
+    // Текущий баланс счета
+    balance: 0,
+  
+    // История транзакций
+    transactions: [],
+  
+    /*
+     * Метод создает и возвращает объект транзакции.
+     * Принимает сумму и тип транзакции.
+     */
+    createTransaction(amount, type) {
+        const newTrans = {
+            amount,
+            type
+        };
+    this.transactions.push(newTrans);
+    return newTrans;
+    },
+
+  
+    /*
+     * Метод отвечающий за добавление суммы к балансу.
+     * Принимает сумму танзакции.
+     * Вызывает createTransaction для создания объекта транзакции
+     * после чего добавляет его в историю транзакций
+     */
+    deposit(amount) {
+        this.balance += amount;
+        this.transactions.push(this.createTransacrion(amout, "deposite"));
+    },
+  
+    /*
+     * Метод отвечающий за снятие суммы с баланса.
+     * Принимает сумму танзакции.
+     * Вызывает createTransaction для создания объекта транзакции
+     * после чего добавляет его в историю транзакций.
+     *
+     * Если amount больше чем текущий баланс, выводи сообщение
+     * о том, что снятие такой суммы не возможно, недостаточно средств.
+     */
+    withdraw(amount) {
+        if(amount > this.balance){
+            alert('снятие такой суммы не возможноБ недостаточно chtlcnd ')
+        }
+    },
+  
+    /*
+     * Метод возвращает текущий баланс
+     */
+    getBalance() {},
+  
+    /*
+     * Метод ищет и возвращает объект транзации по id
+     */
+    getTransactionDetails(id) {
+        return this.transactions[id];
+    },
+  
+    /*
+     * Метод возвращает количество средств
+     * определенного типа транзакции из всей истории транзакций
+     */
+    getTransactionTotal(type) 
+    { let sum;
+        for(let el of this.transiction){
+            if(el.type === type){
+                sum += el.amount;
+            }
+        }    return sum;
+    }
+
+  };
+
+  account.deposit(400);
+  account.deposit(500);
+  account.withdraw(400);
+
+  console.log(account.getBalance());
+  console.log(accpunt.ge);
+  
+  
